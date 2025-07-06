@@ -7,11 +7,8 @@
 
 - Flutter SDK: [公式サイト](https://flutter.dev/docs/get-started/install)からインストール
 - Dart SDK（Flutterに同梱されています）
-- IDE: Android Studio または Visual Studio Code（Flutter/Dart プラグインを有効にしてください）
-- Android Emulator または 実機
+- IDE: Visual Studio Code（Flutter/Dart プラグインを有効にしてください）
 - Git
-
----
 
 ## 🛠 セットアップ手順
 
@@ -37,9 +34,7 @@ flutter pub get
    flutter run
 ```
 
----
-
-## 📁 ディレクトリ構成（例）
+## 📁 ディレクトリ構成
 
 ```
 lib/
@@ -47,8 +42,4 @@ lib/
  ├── screens/ (各操作画面)
  ├── widgets/ (各ウィジェット)
 ```
-
----
-
-## ✍ 備考
 
