@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:raptitapp2025/router/router.dart';
 
 void main() {
@@ -49,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               'クイズ研究会 統合整理券発券システム',
-              style: Theme.of(context).textTheme.displaySmall,
+              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 40),
             Row(
@@ -57,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 TextButton(
                   onPressed: () {
-                    /* ボタンが押された時の処理 */
+                    context.push('/exphayaoshi');
                   },
                   style: TextButton.styleFrom(
                     fixedSize: Size(350, 350),
@@ -78,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Text(
-                        '本物の「早押しクイズ」を体験しよう',
+                        '「本物」の早押しクイズを体験しよう',
                         style: TextStyle(
                           fontSize: 17.5, // 小さな文字サイズ
                         ),
@@ -89,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(width: 20),
                 TextButton(
                   onPressed: () {
-                    /* ボタンが押された時の処理 */
+                    context.push('/exptrocco');
                   },
                   style: TextButton.styleFrom(
                     fixedSize: Size(350, 350),
