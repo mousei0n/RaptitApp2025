@@ -17,3 +17,19 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/fonts/
+
+  fonts:
+    - family: PretendardJP
+      fonts:
+        - asset: assets/fonts/PretendardJP/PretendardJP-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/PretendardJP/PretendardJP-Light.ttf
+          weight: 300
+        - asset: assets/fonts/PretendardJP/PretendardJP-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/PretendardJP/PretendardJP-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/PretendardJP/PretendardJP-Black.ttf
+          weight: 900
