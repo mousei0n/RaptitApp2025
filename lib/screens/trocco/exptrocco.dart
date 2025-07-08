@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 void main() {
   runApp(const MyApp());
@@ -61,7 +62,12 @@ class _MyExpTroccoState extends State<MyExpTrocco> {
                   textAlign: TextAlign.left,
                 ),
                 Text(
-                  '・トロッコの向きを変える際には穏やかに移動してください',
+                  '・チームは3人での構成のみ受け付けます',
+                  style: TextStyle(fontSize: 20),
+                  textAlign: TextAlign.left,
+                ),
+                Text(
+                  '・トロッコ内では穏やかに移動してください',
                   style: TextStyle(fontSize: 20),
                   textAlign: TextAlign.left,
                 ),
@@ -80,7 +86,7 @@ class _MyExpTroccoState extends State<MyExpTrocco> {
             SizedBox(height: 40),
             TextButton(
               onPressed: () {
-                /* ボタンが押された時の処理 */
+                context.push('/regitrocco');
               },
               style: TextButton.styleFrom(
                 fixedSize: Size(200, 50),

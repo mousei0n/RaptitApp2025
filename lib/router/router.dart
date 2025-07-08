@@ -4,6 +4,7 @@ import 'package:raptitapp2025/main.dart';
 import 'package:raptitapp2025/screens/hayaoshi/exphayaoshi.dart';
 import 'package:raptitapp2025/screens/hayaoshi/regihayaoshi.dart';
 import 'package:raptitapp2025/screens/trocco/exptrocco.dart';
+import 'package:raptitapp2025/screens/trocco/regitrocco.dart';
 
 final goRouter = GoRouter(
   // アプリが起動した時
@@ -47,6 +48,16 @@ final goRouter = GoRouter(
         return MaterialPage(
           key: state.pageKey,
           child: const MyRegiHayaoshi(title: ''),
+        );
+      },
+    ),
+    GoRoute(
+      path: '/regitrocco',
+      name: 'regitrocco',
+      pageBuilder: (context, state) {
+        return MaterialPage(
+          key: state.pageKey,
+          child: const MyRegiTrocco(title: ''),
         );
       },
     ),

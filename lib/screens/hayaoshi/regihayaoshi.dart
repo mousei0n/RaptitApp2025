@@ -55,14 +55,30 @@ class _MyRegiHayaoshiState extends State<MyRegiHayaoshi> {
               style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
             ),
             Text('本格的な早押し機と問題で体感する「本物」の早押しクイズ', style: TextStyle(fontSize: 25)),
-            SizedBox(height: 40),
+            SizedBox(height: 30),
             Text(
-              '注意事項',
+              '整理番号発行',
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
+            SizedBox(height: 40),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Container(
+                  height: 30,
+                  width: 200,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.indigo,
+                  ),
+                  child: Center(
+                    child: Text(
+                      'プレイヤー',
+                      style: TextStyle(fontSize: 20, color: Colors.white),
+                    ),
+                  ),
+                ),
+                SizedBox(width: 40),
                 SizedBox(
                   width: 200,
                   height: 50,
@@ -207,7 +223,7 @@ class _MyRegiHayaoshiState extends State<MyRegiHayaoshi> {
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
-                children: [Text('整理券を発行する', style: TextStyle(fontSize: 20))],
+                children: [Text('整理番号を発行する', style: TextStyle(fontSize: 20))],
               ),
             ),
           ],
