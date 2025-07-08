@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 void main() {
   runApp(const MyApp());
@@ -80,7 +81,7 @@ class _MyExpHayaoshiState extends State<MyExpHayaoshi> {
             SizedBox(height: 40),
             TextButton(
               onPressed: () {
-                /* ボタンが押された時の処理 */
+                context.push('/regihayaoshi');
               },
               style: TextButton.styleFrom(
                 fixedSize: Size(200, 50),
